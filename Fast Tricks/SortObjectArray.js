@@ -11,6 +11,7 @@ const listPrices = products.sort((a, b) => {
     return 0;
 })
 
+
 console.log(listPrices)
 //Result:
 //  {product: 'Pizza de Frango com Catupiry', price: 35.9}

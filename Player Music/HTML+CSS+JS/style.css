@@ -1,0 +1,143 @@
+:root{
+    --background:#1b0536;
+    --linearGradient: #680251;
+    --highlights:#F81AC5;
+    --shape:#fafafa;
+    --shape-secoundary:#eaeaea;
+    --secondary:#321B4F;
+    --shapeSecoundary: #754369
+}   
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    @media(max-width:1080px){
+        font-size:93.75%; 
+    }
+
+    @media(max-width:720px){
+        font-size:87.5%;
+    }
+}
+
+body, input, textarea, button{
+    font-family:'Poppins',sans-serif;
+    font-weight:400;
+}
+
+body{
+    background-image: linear-gradient(var(--linearGradient),var(--background));
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6,strong{
+    font-weight:600;
+}
+
+button{
+    cursor:pointer;
+}
+
+[disabled]{
+    opacity:0.6;
+    cursor:not-allowed;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0 3.75rem;
+    height: 100%;
+}
+
+#image-music{
+    height: 21.5rem;
+    width: 21.5rem;
+    border-radius: 11.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.35rem;
+}
+
+header > h1 {
+    color:var(--shape);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.25rem;
+}
+
+header > p {
+    margin-top: 0.75rem;
+    color:var(--shape-secoundary);
+    font-size: 1rem;
+}
+
+.player{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.75rem;
+}
+
+.controlPlayPauseMusic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.25rem;
+    width: 4.25rem;
+    background-color: var(--highlights);
+    border-radius: 2.125rem;
+    position: relative;
+    z-index: 2;
+}
+
+.blurControlContainer{
+    height: 4.25rem;
+    width: 4.25rem;
+    background-color: var(--highlights);
+    border-radius: 2.125rem;
+    position: absolute;
+    filter: blur(0.5rem);
+    z-index: -1;
+    
+}
+
+.btn-player{
+    background-color: transparent;
+    border:none;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    margin-top: 2.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 1.25rem 1rem;
+    border-radius: 1.25rem;
+}

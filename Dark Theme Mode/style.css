@@ -1,0 +1,43 @@
+:root{
+    --clr-bg:#fafafa;
+    --clr-font:#282c35;
+    --clr-primary:#a55eea;
+    --clr-shape:#64748b;
+}
+
+.dark-theme{
+    --clr-bg:#282c35;
+    --clr-font:#fafafa;
+    --clr-primary:#c18cf7;
+    --clr-shape:#cbd5e1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--clr-bg);
+    padding:1.5rem 1rem;
+    height: 100vh;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+h1{
+    color: var(--clr-primary);
+}
+
+span{
+    color: var(--clr-shape);
+}
+
+p{
+    color:var(--clr-font)
+}

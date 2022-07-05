@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <main class="container">
+        <div id="image-music"></div>
+
+        <header>
+            <h1 id="name-music">Baile da Serra</h1>
+            <p id="name-artist">Dj Nattan, Barrao, LIT UP</p>
+        </header>
+
+        <audio id="audio-player" ></audio>
+
+        <div class="player">
+            <button class="btn-player" id="shuffling" onclick="toggleShuffling()">
+                <img src="./assets/images/icons/shuffler-music.svg" />
+            </button>
+
+            <button class="btn-player" id="play-prevMusic" onclick="prevMusic()">
+                <img src="./assets/images/icons/prev-music.svg" />
+            </button>
+
+            <div class="controlPlayPauseMusic">
+                <div class="blurControlContainer"></div>
+                <button class="btn-player" id="play-music" onclick="toggleIsPlaying()">
+                    <img id="play-music-icon" src="./assets/images/icons/pause-music.svg" />
+                </button>
+            </div>
+
+            <button class="btn-player" id="play-nextMusic" onclick="nextMusic()">
+                <img src="./assets/images/icons/next-music.svg" />
+            </button>
+
+            <button class="btn-player" onclick="muteMusic()">
+                <img src="./assets/images/icons/mute-music.svg" id="mute-music-icon" />
+            </button>
+        </div>
+
+        <footer class="menu">
+            <button class="btn-player">
+                <img src="./assets/images/icons/download-music.svg" />
+            </button>
+
+            <button class="btn-player">
+                <img src="./assets/images/icons/list-music.svg" />
+            </button>
+
+            <button class="btn-player">
+                <img src="./assets/images/icons/wish-list-music.svg" />
+            </button>
+        </footer>
+        <script src="index.js"></script>
+    </main>
+</body>
+
+</html>
