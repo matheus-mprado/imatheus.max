@@ -1,0 +1,90 @@
+:root{
+    --background:#020202;
+    --shape:#fafafa;
+    --shape-secoundary:#eaeaea;
+}   
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    @media(max-width:1080px){
+        font-size:93.75%; 
+    }
+
+    @media(max-width:720px){
+        font-size:87.5%;
+    }
+}
+
+body, input, textarea, button{
+    font-family:'Poppins',sans-serif;
+    font-weight:400;
+}
+
+body{
+    background-image: linear-gradient(#1c1c1c,var(--background));
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6,strong{
+    font-weight:600;
+}
+
+/****************************************************************/
+
+.row{
+    display:flex;
+    flex-direction:row;
+}
+
+.column{
+    display:flex;
+    flex-direction:column;
+}
+
+main{
+    position:relative;
+}
+
+header{
+    padding:1rem;
+    background:#010101;
+    margin-bottom:1rem;
+    position:stick;
+}
+
+header > img{
+    height:3rem;
+}
+
+header > nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex:1;
+    padding:0 3rem;
+}
+
+header > nav > span{
+    color:var(--shape);
+}
+
+main{
+    padding:1rem;
+    gap:1.5rem;
+}
+
+main > section > h2 {
+    color:var(--shape);
+    font-size:1.125rem
+}
+
+.sliderCards > article{
+    overflow:auto;
+    margin-top:0.25rem;
+    gap:1rem;
+}
